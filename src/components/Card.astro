@@ -1,0 +1,23 @@
+---
+// const header = Astro.props.header;
+// const header = Astro.props.text;
+
+const {header} = Astro.props;
+ 
+---
+
+<article class="card">
+<h2>{header}</h2>
+<p> korterer lorem ipsum</p>
+<slot/>
+</article>
+
+
+<style>
+p{
+color:royalblue;
+}
+.card {
+    background:white;
+}
+</style>
